@@ -12,7 +12,11 @@ type QtFile struct {
 	FileReader *bufio.Reader
 }
 
-//CheckFileIsExist
+func Test() string {
+	return "test"
+}
+
+// CheckFileIsExist
 //
 // 判断文件是否存在  存在返回 true 不存在返回false
 func (c QtFile) CheckFileIsExist(filename string) bool {
@@ -27,7 +31,7 @@ func (c QtFile) CheckFileIsExist(filename string) bool {
 //
 // 打开一个文件 成功返回 nil
 //
-// Filename 文件名
+// # Filename 文件名
 //
 // OpenType 打开类型 1 清空后打开 2 = 如果已经存在，则在尾部添加写 3 = 如果已经存在，会覆盖写，不会清空原来的文件，而是从头直接覆盖写 4=如果已经存在，则失败
 //
