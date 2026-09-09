@@ -1,4 +1,4 @@
-module gitee.com/ami888/qt
+module github.com/ami888-dev/qt
 
 go 1.25.0
 
